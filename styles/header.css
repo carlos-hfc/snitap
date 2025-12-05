@@ -1,32 +1,32 @@
 header {
   max-width: 80rem;
-  margin: auto;
+  margin-inline: auto;
   width: 100%;
   padding: 1.25rem 2rem;
 
-  nav {
+  & nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    img {
+    & img {
       width: 2rem;
       height: 2rem;
       transition: transform 500ms;
 
-      &[src*="logo"]:hover {
+      & &[src*="logo"]:hover {
         transform: rotate(90deg);
       }
 
-      &[src*="shopping"]:hover {
+      & &[src*="shopping"]:hover {
         transform: rotate(-30deg);
       }
     }
 
-    a {
+    & a {
       position: relative;
 
-      span {
+      & span {
         position: absolute;
         top: -0.5rem;
         right: -0.5rem;
